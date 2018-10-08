@@ -31,7 +31,7 @@ public class LxRateLimitAspect {
      * 1、通过扫包切入
      * 2、带有指定注解切入
      */
-//    @Pointcut("execution(public * com.ycn.springcloud.*.*(..))")
+//    @Pointcut("execution(public * com.zombie.*.*(..))")
     @Pointcut("@annotation(com.zombie.limit2.LxRateLimit)")
     public void checkPointcut() {
     }
